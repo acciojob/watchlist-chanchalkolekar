@@ -42,4 +42,8 @@ public class MovieService {
     public void deleteAllDirectors() {
         movierepo.deleteAllDirectors();
     }
+
+    public List<String> findAllMovies() {
+        return movierepo.findAllMovies();
+    }
 }

@@ -90,4 +90,12 @@ public class MovieRepository {
             }
         }
     }
+
+    public List<String> findAllMovies() {
+        List<String> list = new ArrayList<>();
+        for (String name : db.keySet()) {
+            list.add(name);
+        }
+        return list;
+    }
 }
